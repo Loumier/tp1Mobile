@@ -14,5 +14,27 @@ namespace App1
         {
             InitializeComponent();
         }
+        private void btnOk(object sender, EventArgs e)
+        {
+            if (entryUser.Text == "admin" && entryPassword.Text == "123456")
+            {
+                DisplayAlert("", "Login realizado com sucesso", "Ok");
+            }
+            else
+            {
+                DisplayAlert("", "Login falhou", "Ok");
+            }
+        }
+
+        private void btnClean(object sender, EventArgs e)
+        {
+            entryPassword.Text = "";
+            entryUser.Text = "";
+        }
+
+        private async void btnCredits(object sender, EventArgs e)
+        {
+            await DisplayAlert("Créditos", "Feito por Guilherme Borges Cunha", "Fechar");
+        }
     }
 }

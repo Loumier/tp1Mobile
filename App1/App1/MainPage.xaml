@@ -9,23 +9,27 @@
         <Label Text="ID:" 
                TextColor="White"
                FontSize="40"/>
-        <Entry Placeholder="usuario@email.com" 
-               HorizontalOptions="CenterAndExpand"
-               
+        <Entry Placeholder="usuario@email.com"            
                BackgroundColor="WhiteSmoke"
-               HorizontalTextAlignment="End"/>
+               HorizontalTextAlignment="End"
+               x:Name="entryUser"/>
 
         <Label Text="Senha:"
                TextColor="White"
                FontSize="40"
                />
         <Entry Placeholder="P@ssw0rd" 
-               HorizontalOptions="CenterAndExpand"
-               BackgroundColor="WhiteSmoke"/>
+               BackgroundColor="WhiteSmoke"
+               Keyboard="Numeric"
+               HorizontalTextAlignment="End"
+               x:Name="entryPassword"/>
 
-        <Button Text="Ok"></Button>
-        <Button Text="Limpar"></Button>
-        <Button Text="Créditos"></Button>
+        <Button Text="Ok"
+                Clicked="btnOk"></Button>
+        <Button Text="Limpar"
+                Clicked="btnClean"></Button>
+        <Button Text="Créditos"
+                Clicked="btnCredits"></Button>
     </StackLayout>
 
 </ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout
+            Padding="20"
+            BackgroundColor="Black">
+        <Label Text="ID:" 
+               TextColor="White"
+               FontSize="40"/>
+        <Entry Placeholder="usuario@email.com" 
+               HorizontalOptions="CenterAndExpand"
+               
+               BackgroundColor="WhiteSmoke"
+               HorizontalTextAlignment="End"/>
+
+        <Label Text="Senha:"
+               TextColor="White"
+               FontSize="40"
+               />
+        <Entry Placeholder="P@ssw0rd" 
+               HorizontalOptions="CenterAndExpand"
+               BackgroundColor="WhiteSmoke"/>
+
+        <Button Text="Ok"></Button>
+        <Button Text="Limpar"></Button>
+        <Button Text="Créditos"></Button>
+    </StackLayout>
+
+</ContentPage>
